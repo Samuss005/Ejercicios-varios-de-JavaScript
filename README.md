@@ -1,24 +1,13 @@
 # Ejercicios-varios-de-JavaScript
-
+================================
 Alumno: Samuele Isidoro Moccia
-
+================================
 Este repositorio contiene la resolución de 10 ejercicios básicos de JavaScript enfocados en la manipulación del DOM, eventos y lógica básica.
 
-Cada ejercicio se encuentra en un archivo HTML independiente en la raíz del repositorio:
-
-ejercicio1.html
-ejercicio2.html
-ejercicio3.html
-ejercicio4.html
-ejercicio5.html
-ejercicio6.html
-ejercicio7.html
-ejercicio8.html
-ejercicio9.html
-ejercicio10.html
-
+Cada ejercicio se encuentra en un archivo HTML independiente en la raíz del repositorio.
+=============
 Ejercicios:
-
+=============
 Ejercicio 1: Mostrar un mensaje al hacer clic
 
 Archivo: ejercicio1.html
@@ -42,7 +31,7 @@ Al hacer clic en un botón, mostrar la hora actual del sistema en un párrafo.
 Ejercicio 5: Saludo personalizado con input
 
 Archivo: ejercicio5.html
-Un input para escribir el nombre, un botón y un párrafo. Mostrar: "¡Hola, [nombre]!".
+Un input para escribir el nombre, un botón y un párrafo. Mostrar: "¡Hola, [ nombre ]!".
 
 Ejercicio 6: Calculadora de suma simple
 
