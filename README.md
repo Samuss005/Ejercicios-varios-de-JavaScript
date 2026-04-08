@@ -62,7 +62,7 @@ Una imagen que cambia a otra diferente al hacer clic en un botón.
 Ejercicio 9: Lista de tareas sencilla
 
 Archivo: ejercicio9.html
-Añadir elementos a una lista (<ul>) a partir del texto ingresado en un input.
+Añadir elementos a una lista (ul) a partir del texto ingresado en un input.
 
 Ejercicio 10: Semáforo interactivo
 
