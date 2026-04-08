@@ -1,7 +1,7 @@
 # Ejercicios-varios-de-JavaScript
-================================
+
 Alumno: Samuele Isidoro Moccia
-================================
+
 Este repositorio contiene la resolución de 10 ejercicios básicos de JavaScript enfocados en la manipulación del DOM, eventos y lógica básica.
 
 Cada ejercicio se encuentra en un archivo HTML independiente en la raíz del repositorio.
