@@ -1,0 +1,29 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <input type="text" id="num1">
+
+    <input type="text" id="num2">
+
+    <button id="btn">resultado</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        const boton = document.getElementById("btn")
+        const resultado = document.getElementById("resultado")
+
+
+         boton.addEventListener("click", function(){
+            const a = Number(document.getElementById("num1").value)
+            const b = Number(document.getElementById("num2").value)
+            let suma = a + b
+            resultado.innerHTML = "La suma es: " + suma
+         })
+    </script>
+</body>
+</html>

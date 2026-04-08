@@ -1,0 +1,31 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <p id="resultado">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+    <button id="ocultar">Ocultar</button>
+
+    <script>
+        const resultado = document.getElementById("resultado")
+        const boton= document.getElementById("ocultar")
+        let visible = true
+          boton.addEventListener("click", function(){
+            
+            if(visible){
+                resultado.style.display ="none"
+                boton.innerHTML = "Mostrar"
+                visible = false
+            }else{
+                resultado.style.display ="block"
+                boton.innerHTML = "Ocultar"
+                visible = true
+            }
+          })
+
+    </script>
+</body>
+</html>
