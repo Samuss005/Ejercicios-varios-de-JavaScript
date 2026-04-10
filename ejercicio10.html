@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 10</title>
+
+  <style>
+    .circulo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: gray;
+      margin: 10px auto;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Semáforo -->
+  <div id="rojo" class="circulo"></div>
+  <div id="naranja" class="circulo"></div>
+  <div id="verde" class="circulo"></div>
+
+  <button id="btn">Siguiente</button>
+  <p id="resultado"></p>
+
+  <script>
+    const estados = ["rojo", "naranja", "verde"];
+    const textos = ["Stop", "Atención", "Adelante"];
+    let estado = 0;
+
+    const boton = document.getElementById("btn");
+    const resultado = document.getElementById("resultado");
+
+    const rojo = document.getElementById("rojo");
+    const naranja = document.getElementById("naranja");
+    const verde = document.getElementById("verde");
+
+    function actualizarSemaforo() {
+      // apagar todos
+      rojo.style.backgroundColor = "gray";
+      naranja.style.backgroundColor = "gray";
+      verde.style.backgroundColor = "gray";
+
+      // encender el actual
+      if (estado === 0) {
+        rojo.style.backgroundColor = "red";
+      } else if (estado === 1) {
+        naranja.style.backgroundColor = "orange";
+      } else {
+        verde.style.backgroundColor = "green";
+      }
+
+      resultado.innerHTML = textos[estado];
+    }
+
+    boton.addEventListener("click", function() {
+      estado = (estado + 1) % 3; // cambia estado
+      actualizarSemaforo();
+    });
+
+    // estado inicial
+    actualizarSemaforo();
+
+  </script>
+
+</body>
+</html>

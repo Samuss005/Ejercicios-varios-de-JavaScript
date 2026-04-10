@@ -1,16 +1,27 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8</title>
+  <meta charset="UTF-8">
+  <title>Ejercicio 8</title>
 </head>
 <body>
-    <img id="foto">
-    <button id="btn">pusal aqui</button>
 
-    <script>
-        const boton = document.getElementById ("btn")
-        const img = document.getElementById ("foto")
-    </script>
+  <!-- Imagen inicial -->
+  <img id="foto" src="https://picsum.photos/200/150?random=1">
+
+  <br><br>
+
+  <!-- Botón -->
+  <button id="btn">Cambiar imagen</button>
+
+  <script>
+    const boton = document.getElementById("btn");
+    const img = document.getElementById("foto");
+
+boton.addEventListener("click", function() {
+  img.src = "https://picsum.photos/200/150?random=" + Math.random();
+});
+  </script>
+
 </body>
 </html>

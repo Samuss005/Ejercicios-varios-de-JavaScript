@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 9</title>
+</head>
+<body>
+
+  <input type="text" id="tarea" placeholder="Escribe una tarea">
+  <button id="btn">Añadir</button>
+
+  <ul id="lista"></ul>
+
+  <script>
+    const boton = document.getElementById("btn");
+    const input = document.getElementById("tarea");
+    const lista = document.getElementById("lista");
+
+    boton.addEventListener("click", function() {
+      const texto = input.value;
+
+      lista.innerHTML = lista.innerHTML + "<li>" + texto + "</li>";
+
+      input.value = ""; // limpiar input
+    });
+  </script>
+
+</body>
+</html>
